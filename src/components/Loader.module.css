@@ -1,0 +1,7 @@
+/* Стилі для індикатора завантаження */
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}

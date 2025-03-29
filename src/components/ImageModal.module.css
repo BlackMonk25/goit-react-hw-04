@@ -1,0 +1,52 @@
+/* Стилі для оверлею */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий чорний фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Стилі для самого модального вікна */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 90vw; /* Вікно не ширше 90% екрану */
+  max-height: 90vh; /* Вікно не вище 90% екрану */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стилі для зображення */
+.modal img {
+  max-width: 100%;
+  max-height: 80vh; /* Щоб зображення не виходило за межі вікна */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Зображення пропорційно вписується */
+  border-radius: 5px;
+}
+
+/* Кнопка закриття */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+.closeButton:hover {
+  color: red;
+}
